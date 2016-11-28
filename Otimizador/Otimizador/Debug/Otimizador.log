@@ -1,0 +1,99 @@
+﻿Build started 28/11/2016 10:45:54.
+     1>Project "C:\Users\ryan.filho\Documents\Testes\OtimizadorComGrafos\Otimizador\Otimizador\Otimizador.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _USING_V110_SDK71_ /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt main.c vertice.c
+         vertice.c
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\vertice.c(24): error C2065: 'INFINITY' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\vertice.c(24): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\vertice.c(50): warning C4142: benign redefinition of type
+         main.c
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(9): error C2275: 'Grafo' : illegal use of this type as an expression
+                 c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\grafo.h(6) : see declaration of 'Grafo'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(9): error C2065: 'g' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(10): error C2275: 'Vertice' : illegal use of this type as an expression
+                 c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\vertice.h(4) : see declaration of 'Vertice'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(10): error C2065: 'v1' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(11): error C2275: 'Vertice' : illegal use of this type as an expression
+                 c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\vertice.h(4) : see declaration of 'Vertice'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(11): error C2065: 'v2' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(12): error C2275: 'Vertice' : illegal use of this type as an expression
+                 c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\vertice.h(4) : see declaration of 'Vertice'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(12): error C2065: 'v3' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(13): error C2275: 'Vertice' : illegal use of this type as an expression
+                 c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\vertice.h(4) : see declaration of 'Vertice'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(13): error C2065: 'v4' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(14): error C2275: 'Aresta' : illegal use of this type as an expression
+                 c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\aresta.h(6) : see declaration of 'Aresta'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(14): error C2065: 'a1' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(14): error C2065: 'v1' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(14): warning C4047: 'function' : 'Vertice *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(14): warning C4024: 'criar_aresta' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(14): error C2065: 'v2' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(14): warning C4024: 'criar_aresta' : different types for formal and actual parameter 3
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(15): error C2275: 'Aresta' : illegal use of this type as an expression
+                 c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\aresta.h(6) : see declaration of 'Aresta'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(15): error C2065: 'a2' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(15): error C2065: 'v2' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(15): warning C4047: 'function' : 'Vertice *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(15): warning C4024: 'criar_aresta' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(15): error C2065: 'v3' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(15): warning C4024: 'criar_aresta' : different types for formal and actual parameter 3
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(16): error C2275: 'Aresta' : illegal use of this type as an expression
+                 c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\aresta.h(6) : see declaration of 'Aresta'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(16): error C2065: 'a3' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(16): error C2065: 'v3' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(16): warning C4047: 'function' : 'Vertice *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(16): warning C4024: 'criar_aresta' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(16): error C2065: 'v4' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(16): warning C4024: 'criar_aresta' : different types for formal and actual parameter 3
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(18): error C2065: 'g' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(18): warning C4047: 'function' : 'Grafo *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(18): warning C4024: 'adicionar_vertice' : different types for formal and actual parameter 1
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(18): error C2065: 'v1' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(18): warning C4047: 'function' : 'Vertice *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(18): warning C4024: 'adicionar_vertice' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(19): error C2065: 'g' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(19): warning C4047: 'function' : 'Grafo *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(19): warning C4024: 'adicionar_vertice' : different types for formal and actual parameter 1
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(19): error C2065: 'v2' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(19): warning C4047: 'function' : 'Vertice *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(19): warning C4024: 'adicionar_vertice' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(20): error C2065: 'g' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(20): warning C4047: 'function' : 'Grafo *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(20): warning C4024: 'adicionar_vertice' : different types for formal and actual parameter 1
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(20): error C2065: 'v3' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(20): warning C4047: 'function' : 'Vertice *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(20): warning C4024: 'adicionar_vertice' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(21): error C2065: 'g' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(21): warning C4047: 'function' : 'Grafo *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(21): warning C4024: 'adicionar_vertice' : different types for formal and actual parameter 1
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(21): error C2065: 'v4' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(21): warning C4047: 'function' : 'Vertice *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(21): warning C4024: 'adicionar_vertice' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(22): error C2065: 'g' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(22): warning C4047: 'function' : 'Grafo *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(22): warning C4024: 'adicionar_aresta' : different types for formal and actual parameter 1
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(22): error C2065: 'a1' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(22): warning C4047: 'function' : 'Aresta *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(22): warning C4024: 'adicionar_aresta' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(23): error C2065: 'g' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(23): warning C4047: 'function' : 'Grafo *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(23): warning C4024: 'adicionar_aresta' : different types for formal and actual parameter 1
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(23): error C2065: 'a2' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(23): warning C4047: 'function' : 'Aresta *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(23): warning C4024: 'adicionar_aresta' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(24): error C2065: 'g' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(24): warning C4047: 'function' : 'Grafo *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(24): warning C4024: 'adicionar_aresta' : different types for formal and actual parameter 1
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(24): error C2065: 'a3' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(24): warning C4047: 'function' : 'Aresta *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(24): warning C4024: 'adicionar_aresta' : different types for formal and actual parameter 2
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(27): error C2065: 'g' : undeclared identifier
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(27): warning C4047: 'function' : 'Grafo *' differs in levels of indirection from 'int'
+     1>c:\users\ryan.filho\documents\testes\otimizadorcomgrafos\otimizador\otimizador\main.c(27): warning C4024: 'imprimir_grafo' : different types for formal and actual parameter 1
+         Generating Code...
+     1>Done Building Project "C:\Users\ryan.filho\Documents\Testes\OtimizadorComGrafos\Otimizador\Otimizador\Otimizador.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.32

@@ -1,5 +1,0 @@
-﻿  grafo.c
-c:\users\jetix\source\repos\utm\otimizador\otimizador\grafo.c(123): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-c:\users\jetix\source\repos\utm\otimizador\otimizador\grafo.c(130): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
-  Otimizador.vcxproj -> C:\Users\Jetix\Source\Repos\UTM\Otimizador\Debug\Otimizador.exe
-  Otimizador.vcxproj -> C:\Users\Jetix\Source\Repos\UTM\Otimizador\Debug\Otimizador.pdb (Partial PDB)
