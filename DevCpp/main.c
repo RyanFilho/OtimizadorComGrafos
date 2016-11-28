@@ -66,7 +66,7 @@ int caminhoMinimo(Grafo * g, Vertice * origem, Vertice * destino){
 			int peso = getPeso_aresta(as[j]);
 
 			if (getDist_vertice(origem) + peso < getDist_vertice(destino)){
-				setDist_vertice(getDist_vertice(origem) + peso);
+				setDist_vertice(destino, getDist_vertice(origem) + peso);
 				setAnt_vertice(destino, origem);
 			}
 		}
