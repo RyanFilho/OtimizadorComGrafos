@@ -25,9 +25,12 @@ int main() {
 	adicionar_aresta(g, a1);
 	adicionar_aresta(g, a2);
 	adicionar_aresta(g, a3);
-
+	
+	caminhoMinimo(g,v1, v4);
 
 	imprimir_grafo(g);
+	
+	printf("Custo minimo %d", getDist_vertice(v4));
 	
 	system("pause");
 	return 0;
@@ -37,10 +40,10 @@ int caminhoMinimo(Grafo * g, Vertice * origem, Vertice * destino){
 	int i = 0;
 	int j = 0;
 	Vertice ** vs = (Vertice **) malloc(50 * sizeof(Vertice *));
-	vs = todos_vertices(g);
+	vs = (Vertice **) todos_vertices(g);
 	
 	Aresta ** as = (Aresta **) malloc(50 * sizeof(Aresta *));
-	as = todas_arestas(g);
+	as = (Aresta **) todas_arestas(g);
 	
 	for(i = 0; i < vertices_grafo(g); i++){
 		if (vs[i] == origem){
@@ -61,7 +64,7 @@ int caminhoMinimo(Grafo * g, Vertice * origem, Vertice * destino){
 			int peso = getPeso_aresta(as[j]);
 
 			if (getDist_vertice(origem) != INFINITY && getDist_vertice(origem) + peso < getDist_vertice(destino))
-				getDist_vertice(destino) = getDist_vertice(origem) + peso;
+				setDist_vertice(getDist_vertice(origem) + peso);
 				setAnt_vertice(destino, origem);
 		}
 	}
@@ -73,7 +76,10 @@ int caminhoMinimo(Grafo * g, Vertice * origem, Vertice * destino){
 		int peso = getPeso_aresta(as[j]);
 
 		if (getDist_vertice(origem) != INFINITY && getDist_vertice(origem) + peso < getDist_vertice(destino))	
+		{
 			printf("O grafo possui um ciclo de peso negativo.");
+			return -1;
+		}
 	}
 	
 	return 0;
