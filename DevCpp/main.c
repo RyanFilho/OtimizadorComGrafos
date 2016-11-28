@@ -5,6 +5,7 @@
 #include "Grafo.h"
 #include "Aresta.h"
 #include "Vertice.h"
+#include <limits.h>
 
 
 int main() {
@@ -48,11 +49,13 @@ int caminhoMinimo(Grafo * g, Vertice * origem, Vertice * destino){
 	as = (Aresta **) todas_arestas(g);
 	
 	for(i = 0; i < vertices_grafo(g); i++){
+		printf("id v[] = %s , id origem = %s\n",getID_vertice(vs[i]), getID_vertice(origem));
 		if (getID_vertice(vs[i]) == getID_vertice(origem)){
 			setDist_vertice(origem, 0);
 			
 		}else{
 			setDist_vertice(vs[i], INFINITY);
+			printf(" distancia do vertice  = %f\n", getDist_vertice(vs[i]));
 			setAnt_vertice(vs[i], NULL);
 		}
 	}
@@ -64,9 +67,11 @@ int caminhoMinimo(Grafo * g, Vertice * origem, Vertice * destino){
 			Vertice * origem = getOrigem_aresta(as[j]);
 			Vertice * destino = getDest_aresta(as[j]);
 			int peso = getPeso_aresta(as[j]);
-
-			if (getDist_vertice(origem) + peso < getDist_vertice(destino)){
-				setDist_vertice(destino, getDist_vertice(origem) + peso);
+			//printf("----------\n");
+			//imprimir_aresta(as[j]);
+			//printf("\ndistancia ori:%f;dest:%f\n",getDist_vertice(origem),getDist_vertice(destino));
+			if (getDist_vertice(origem) + (float)peso < getDist_vertice(destino)){
+				setDist_vertice(destino, getDist_vertice(origem) + (float)peso);
 				setAnt_vertice(destino, origem);
 			}
 		}
@@ -78,7 +83,7 @@ int caminhoMinimo(Grafo * g, Vertice * origem, Vertice * destino){
 		Vertice * destino = getDest_aresta(as[j]);
 		int peso = getPeso_aresta(as[j]);
 
-		if (getDist_vertice(origem) + peso < getDist_vertice(destino))	
+		if (getDist_vertice(origem) + (float)peso < getDist_vertice(destino))	
 		{
 			printf("O grafo possui um ciclo de peso negativo.");
 			return -1;
