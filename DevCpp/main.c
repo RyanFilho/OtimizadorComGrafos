@@ -31,7 +31,7 @@ int main() {
 
 	imprimir_grafo(g);
 	
-	printf("Custo minimo %d \n\n", getDist_vertice(v4));
+	printf("Custo minimo %f \n\n", getDist_vertice(v4));
 	
 	destruir_grafo(g);
 	
@@ -48,18 +48,19 @@ int caminhoMinimo(Grafo * g, Vertice * origem, Vertice * destino){
 	Aresta ** as = (Aresta **) malloc(50 * sizeof(Aresta *));
 	as = (Aresta **) todas_arestas(g);
 	
-	for(i = 0; i < vertices_grafo(g); i++){
-		printf("id v[] = %s , id origem = %s\n",getID_vertice(vs[i]), getID_vertice(origem));
-		if (getID_vertice(vs[i]) == getID_vertice(origem)){
-			setDist_vertice(origem, 0);
-			
-		}else{
-			setDist_vertice(vs[i], INFINITY);
-			printf(" distancia do vertice  = %f\n", getDist_vertice(vs[i]));
-			setAnt_vertice(vs[i], NULL);
-		}
-	}
+	//for(i = 0; i < vertices_grafo(g); i++){
+	//	printf("id v[] = %s , id origem = %s\n",getID_vertice(vs[i]), getID_vertice(origem));
+	//	if (getID_vertice(vs[i]) == getID_vertice(origem)){
+	//		setDist_vertice(origem, 0);
+	//		
+	//	}else{
+	//		setDist_vertice(vs[i], INFINITY);
+	//		printf(" distancia do vertice  = %f\n", getDist_vertice(vs[i]));
+	//		setAnt_vertice(vs[i], NULL);
+	//	}
+	//}
 	
+	setDist_vertice(origem, 0);
 	for (i = 1; i <= vertices_grafo(g) - 1; ++i)
 	{
 		for (j = 0; j < arestas_grafo(g); ++j)
