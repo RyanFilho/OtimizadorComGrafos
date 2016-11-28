@@ -52,7 +52,7 @@ float getDist_vertice(Vertice * v) {
 		return v->distancia;
 	}
 	else {
-		return false;
+		return -1;
 	}
 }
 
